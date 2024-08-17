@@ -1,8 +1,9 @@
 import { MouseEvent, FormEvent, FC, useContext, useState } from 'react'
-import { Context } from '../main'
 import { observer } from 'mobx-react-lite'
 
-const LoginForm: FC = () => {
+import { Context } from '../main'
+
+const LoginForm: FC = observer(() => {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 
@@ -42,5 +43,6 @@ const LoginForm: FC = () => {
 			<button onClick={registrationHandler}>Регистрация</button>
 		</form>
 	)
-}
-export default observer(LoginForm)
+})
+
+export default LoginForm

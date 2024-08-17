@@ -1,4 +1,5 @@
 import axios from 'axios'
+
 import { AuthResponse } from '../models/response/AuthResponse.ts'
 
 const $api = axios.create({

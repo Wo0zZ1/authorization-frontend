@@ -8,7 +8,7 @@ import UserService from './services/UserService'
 import { Context } from './main'
 import LoginForm from './components/LoginForm'
 
-const App = () => {
+const App = observer(() => {
 	const { store } = useContext(Context)
 	const [users, setUsers] = useState<IUser[]>([])
 
@@ -53,6 +53,6 @@ const App = () => {
 			))}
 		</>
 	)
-}
+})
 
-export default observer(App)
+export default App
