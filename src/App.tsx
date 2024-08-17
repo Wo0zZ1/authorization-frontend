@@ -1,9 +1,12 @@
 import { useContext, useEffect, useState } from 'react'
-import LoginForm from './components/LoginForm'
-import { Context } from './main'
 import { observer } from 'mobx-react-lite'
-import UserService from './services/UserService'
+
 import { IUser } from './models/IUser'
+
+import UserService from './services/UserService'
+
+import { Context } from './main'
+import LoginForm from './components/LoginForm'
 
 const App = () => {
 	const { store } = useContext(Context)

@@ -1,8 +1,11 @@
 import { createContext } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
-import './index.scss'
+
 import Store from './store/store.ts'
+
+import App from './App.tsx'
+
+import './index.scss'
 
 interface State {
 	store: Store
